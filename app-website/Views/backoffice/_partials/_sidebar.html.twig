@@ -1,0 +1,27 @@
+ <!-- Sidebar -->
+	<nav id="sidebar">
+		 <div class="sidebar-header">
+			 <h3>Title</h3>
+			 <strong>BS</strong>
+		 </div>
+		 <ul class="list-unstyled components">
+			 <li class="{% if activItem == 'site' %}active{% endif %}">
+				 <a href="{{ url('/')}}" target="_blank">
+					 <i class="fas fa-home"></i>
+					 Le site
+				 </a>
+			 </li>
+			 <li class="{% if activItem == 'accueil' %}active{% endif %}">
+				 <a href="{{ url('/backoffice') }}">
+					 <i class=""></i>
+					 Accueil
+				 </a>
+			 </li>			 
+			 <li class="{% if activItem == 'database' %}active{% endif %}">
+				 <a href="#">
+					 <i class="fas fa-database"></i>
+					 Base de données
+				 </a>
+			 </li>
+		 </ul>
+	 </nav>
