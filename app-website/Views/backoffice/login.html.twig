@@ -1,0 +1,35 @@
+{% extends 'layout.html.twig' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+   <div class="fadeIn first">
+      <img style="margin-top:10px;" src="{{ url( '/assets/img/illustrations/logo.png') }}" id="icon" alt="logo du bistro" />
+      <h1>Authentification</h1>
+    </div>
+
+<form action="{{ url( '/login') }}" enctype="multipart/form-data" method="POST">
+            <input type="text" id="pseudo" name="pseudo" class="form-control input-sm chat-input" placeholder="Pseudo" />
+            <input type="text" id="password" name="password" class="form-control input-sm chat-input" placeholder="Mot de passe" />            
+            </br>
+            <div class="g-recaptcha" data-sitekey="6LeGXRgaAAAAAMDSAk1MoAAXzT1hZmVFm0VSIdhk"></div>
+            <div class="wrapper">
+            <span class="group-btn">     
+                <input type="submit" class="fadeIn fourth" value="Connexion">
+            </span>            
+            </div>
+            </div>
+</form>
+
+   <div id="formFooter">
+      <a class="underlineHover" href={{ url( '/') }}>Retour sur le site</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+{% block additional_css %}<link rel="stylesheet" href="{{ url( '/assets/css/login.css') }}">{% endblock %}
+{% block additional_js %}<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>{% endblock %}
