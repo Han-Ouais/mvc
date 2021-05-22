@@ -14,6 +14,9 @@ FACULTATIF
 -Lier le captcha à un compte reCaptcha fonctionnel puis entrer la clé ligne 34 du BackOfficeController
 ATTENTION : ne pas oublier de supprimer la ligne 29 ($validation = true);
 
+-Pour une utilisation avec Git, ajouter à la racine un fichier .gitignore avec cette instruction dedans:
+/app-website/vendor/
+
 Le projet peut commencer !
 Ajoutez vos controllers, modèles et vues en fonction de vos besoins.
 
