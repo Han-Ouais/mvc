@@ -7,6 +7,9 @@ composer update
 
 -Changer le nom de app-website (en gardant le app) ainsi que dans le www, puis changer les chemins dans config.php et www/website/index.php
 
+-Renommer le fichier www/website/_.htaccess en enlevant le _
+
+
 FACULTATIF
 -Lier le captcha à un compte reCaptcha fonctionnel puis entrer la clé ligne 34 du BackOfficeController
 ATTENTION : ne pas oublier de supprimer la ligne 29 ($validation = true);
