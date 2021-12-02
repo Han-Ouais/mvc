@@ -7,7 +7,7 @@ composer update
 
 - Changer le nom de app-website (en gardant le app) ainsi que dans le www, puis changer les chemins dans config.php et www/website/index.php
 
-- A la racine du dossier www/website/ créer avec un .htaccess aevc un éditeur de texte et d'y coller ce contenu:
+- A la racine du dossier www/website/ créer un .htaccess avec un éditeur de texte et d'y coller ce contenu:
 ``` 
 Options -Indexes
 RewriteEngine On
